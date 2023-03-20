@@ -35,7 +35,7 @@ public class EjercicioEx6 {
         int y = (int) Math.floor((Math.random()*10));
 //                for (int i = x; i < x; i++) {
                 for (int j = 0; j < palabra.length(); j++) {
-                    sopa[x][j+y] = palabra.substring(j, j+1);
+                    sopa[x][j+y] = palabra.substring(j, j+1).toUpperCase();
                     }  
 //                }
                 }while(cont<5);
