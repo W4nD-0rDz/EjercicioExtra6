@@ -25,7 +25,7 @@ public class EjercicioEx6 {
                 sopa[i][j] = ("*");
             }
         }
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
                    
         do{
           System.out.println("Ingrese una palabra de entre 3 y 5 letras");
@@ -33,14 +33,14 @@ public class EjercicioEx6 {
             cont++;
         int x = (int) Math.floor((Math.random()*20));
         int y = (int) Math.floor((Math.random()*10));
-//                for (int i = x; i < x; i++) {
+//                for (int i = x; i < x; i++) {este loop NO es necesario porque son palabras en una sola dimensión -horizontal)
                 for (int j = 0; j < palabra.length(); j++) {
                     sopa[x][j+y] = palabra.substring(j, j+1).toUpperCase();
                     }  
 //                }
                 }while(cont<5);
         
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
@@ -49,9 +49,11 @@ public class EjercicioEx6 {
              }   
             }
         }
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
     }
     
+    
+/// procedimiento para imprimir///
     public static void imprimir(String [][] matriz, int F, int C) {
     for (int i = 0; i < 20; i++) {
         for (int j = 0; j < 20; j++) {
