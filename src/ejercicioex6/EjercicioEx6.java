@@ -22,7 +22,7 @@ public class EjercicioEx6 {
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-                sopa[i][j] = ("*");
+                sopa[i][j] = ("-");
             }
         }
         imprimir(sopa, F, C);
@@ -44,7 +44,7 @@ public class EjercicioEx6 {
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-             if (sopa[i][j] == "*"){
+             if (sopa[i][j] == "-"){
                  sopa[i][j] = String.valueOf((int)Math.floor(Math.random()*10));
              }   
             }
