@@ -22,10 +22,10 @@ public class EjercicioEx6 {
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-                sopa[i][j] = ("-");
+                sopa[i][j] = ("*");
             }
         }
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
                    
         do{
           System.out.println("Ingrese una palabra de entre 3 y 5 letras");
@@ -40,18 +40,20 @@ public class EjercicioEx6 {
 //                }
                 }while(cont<5);
         
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-             if (sopa[i][j] == "-"){
+             if (sopa[i][j] == "*"){
                  sopa[i][j] = String.valueOf((int)Math.floor(Math.random()*10));
              }   
             }
         }
-        imprimir(sopa, F, C);
+        imprimir(sopa, F, C); ///llamada a procedimiento de impresión
     }
     
+    
+/// procedimiento para imprimir///
     public static void imprimir(String [][] matriz, int F, int C) {
     for (int i = 0; i < 20; i++) {
         for (int j = 0; j < 20; j++) {
