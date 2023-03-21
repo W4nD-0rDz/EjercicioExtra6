@@ -22,7 +22,7 @@ public class EjercicioEx6 {
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-                sopa[i][j] = ("-");
+                sopa[i][j] = ("*");
             }
         }
         imprimir(sopa, F, C);
@@ -33,7 +33,7 @@ public class EjercicioEx6 {
             cont++;
         int x = (int) Math.floor((Math.random()*20));
         int y = (int) Math.floor((Math.random()*10));
-//                for (int i = x; i < x; i++) {
+//                for (int i = x; i < x; i++) {este loop NO es necesario porque son palabras en una sola dimensión -horizontal)
                 for (int j = 0; j < palabra.length(); j++) {
                     sopa[x][j+y] = palabra.substring(j, j+1).toUpperCase();
                     }  
@@ -44,7 +44,7 @@ public class EjercicioEx6 {
         
         for (int i = 0; i < F; i++) {
             for (int j = 0; j < C; j++) {
-             if (sopa[i][j] == "-"){
+             if (sopa[i][j] == "*"){
                  sopa[i][j] = String.valueOf((int)Math.floor(Math.random()*10));
              }   
             }
